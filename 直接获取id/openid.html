@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+	<style type="text/css">
+	#openid {height:100px; background:red;}
+	#test {height:50px; background:green;}
+	</style>
+</head>
+
+<body>
+	<!-- <div id="openid"></div> -->
+	<p id="test"></p>
+
+	<INPUT TYPE="text" ID="oErrorCode" VALUE="someObject.someProperty=true;">
+	<INPUT TYPE="button" VALUE="Throw Error" id="btn">
+	<P>
+	<DIV ID="oErrorLog"></DIV>
+</body>
+</html>
+
+<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded",function (){
+			window.onerror=fnErrorTrap;
+			function fnErrorTrap(sMsg,sUrl,sLine){
+				oErrorLog.innerHTML="<b>An error was thrown and caught.</b><p>";
+				oErrorLog.innerHTML+="Error: " + sMsg + "<br>";
+				oErrorLog.innerHTML+="Line: " + sLine + "<br>";
+				oErrorLog.innerHTML+="URL: " + sUrl + "<br>";
+				return false;
+			}
+
+			var openid = document.getElementById("test");
+			//alert(openid);
+			var oS = document.createElement("script");
+			oS.src="test.js";
+			var oHead=document.getElementsByTagName('head')[0];
+			oHead.appendChild(oS);
+			
+
+		});
+		var oBtn = document.getElementById("btn");
+		/*.oBtnonclick = function fnThrow(){
+			alert(openid);
+		}*/
+</script>
+
