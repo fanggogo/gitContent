@@ -30,6 +30,11 @@ File----Generate font files...
 
 ![icon](image/icon_5.png)
 
+* 为了后期维护，需要添加一些新的icon，则需要将原有的.ttf在Fontgrapher中打开，选中要编辑的格子，将ai图黏贴过去，关闭编辑页面，回到主界面，选择刚才编辑的格字。
+菜单”Element”->”Selection info”，在出现的对话框中填写”Glyph name”（字符）及”Unicode index”（字符编码），点击”ok”，如图：
+
+![icon](image/icon_15.png)
+
 * 为了处理兼容，我们还需要**eot,svg,woff**格式的,我们需要通过下方这个网址转换格式：
 [http://www.fontsquirrel.com/tools/webfont-generator](http://www.fontsquirrel.com/tools/webfont-generator)
 
@@ -37,6 +42,14 @@ File----Generate font files...
 
 一起下载下来的，还包括demo，css，js，我们可以选择自己所需的 ttf， eot，svg，woff，
 **注：通过这个网址转换的.ttf格式的文件大小，要比我们自己通过Fontgrapher生成的.fft格式的文件大小要小，所以问了减小体积，在实际应用中用转换后的.ttf格式的文件。**
+
+选中不同生成方式，生成的文件体积有不同，根据需求选择
+
+**BASIC：基本，直接转换以最小的处理。**
+
+**OPTIMAL：最优，建议设置性能和速度。**
+
+**EXPERT：专家……你决定如何最好地优化你的字体。**
 
 * 下面我们看看这些不同格式的文件（ttf，eot,svg,woff）的兼容性吧
 
@@ -131,7 +144,14 @@ File----Generate font files...
 
 4.参考网址
 -
-* icon转webfont(矢量图转font详细，css书写讲的不详细)
+* icon转
+* 
+* 
+* 
+* 
+* 
+* 
+* webfont(矢量图转font详细，css书写讲的不详细)
 [http://stupig.me/tech/2012/11/27/transfer-icon-to-webfont.html](http://stupig.me/tech/2012/11/27/transfer-icon-to-webfont.html)
 
 * CSS3 icon font完全指南  
