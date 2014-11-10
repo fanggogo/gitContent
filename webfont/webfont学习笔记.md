@@ -35,6 +35,10 @@ File----Generate font files...
 
 ![icon](image/icon_15.png)
 
+注意要点击name生成，编译器识别的编码方式
+
+![icon](image/icon_16.jpg)
+
 * 为了处理兼容，我们还需要**eot,svg,woff**格式的,我们需要通过下方这个网址转换格式：
 [http://www.fontsquirrel.com/tools/webfont-generator](http://www.fontsquirrel.com/tools/webfont-generator)
 
